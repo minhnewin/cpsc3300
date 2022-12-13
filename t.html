@@ -1,0 +1,71 @@
+<html>
+<head><title> Access to the Pizza restaurant database </title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<h1>Pizza Restaurant database</h1>
+
+<p> Provide a table name (will list their attributes) </p> 
+
+<!-- You should replace the URL to PHP script in action with yours -->
+<form name = "f1" action = "http://css1.seattleu.edu/~mnguyen7/dbtest/db1.php" method = "post">  
+    Table: <input type = "text" name = "table" /> <br />
+
+    <input type = "reset"  value = "Reset" />
+    <input type = "submit"  value = "Submit request" />
+</form>    
+
+<br />
+<p> List data stored in tables (using where clause)  </p>
+
+<form name = "f2" action = "http://css1.seattleu.edu/~mnguyen7/dbtest/db2.php" method = "post">  
+<p>
+    Table: <input type = "text" name = "table" /> <br />
+    Attribute: <input type = "text" name = "attribute" /> <br />
+    Value: <input type = "text" name = "value" /> <br />
+</p>
+    <input type = "reset"  value = "Reset" />
+    <input type = "submit"  value = "Submit request" /> 
+    
+</form>
+
+<p>Update order status for the restaurant database</p>
+
+<form name = "f3" action = "http://css1.seattleu.edu/~mnguyen7/dbtest/db3.php" method = "post">
+    OrderID: <input type = "text" name = "OrderID" /> <br />
+    ostatus: <input type = "text" name = "ostatus" /> <br />
+    
+    <input type = "reset"  value = "Reset" />
+    <input type = "submit"  value = "Submit request" /> 
+</form>
+
+<p>Delete branch from the restaurant database</p>
+
+<form name = "f4" action = "http://css1.seattleu.edu/~mnguyen7/dbtest/db4.php" method = "post">
+        BranchID: <input type = "text" name = "BranchID" /> <br />
+
+        <input type = "reset"  value = "Reset" />
+        <input type = "submit"  value = "Submit request" />
+    
+</form>
+
+<p>Insert branch into the restaurant database</p>
+
+<form name = "f5" action = "http://css1.seattleu.edu/~mnguyen7/dbtest/db5.php" method = "post">
+    BranchID: <input type = "text" name = "BranchID" /> <br />
+    bname: <input type = "text" name = "bname" /> <br />
+    bphone: <input type = "text" name = "bphone" /> <br />
+    street: <input type = "text" name = "street" /> <br />
+    city: <input type = "text" name = "city" /> <br />
+    state: <input type = "text" name = "state" /> <br />
+    zip: <input type = "text" name = "zip" /> <br />
+    
+    <input type = "reset"  value = "Reset" />
+    <input type = "submit"  value = "Submit request" /> 
+</form>
+
+<br/>
+
+</body>
+</html>
+
